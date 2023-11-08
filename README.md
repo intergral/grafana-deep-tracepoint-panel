@@ -1,4 +1,8 @@
-# Deep Panel Plugin
+![GitHub release (with filter)](https://img.shields.io/github/v/release/intergral/grafana-deep-datasource)
+[![CI](https://github.com/intergral/grafana-deep-datasource/actions/workflows/ci.yml/badge.svg)](https://github.com/intergral/grafana-deep-datasource/actions/workflows/ci.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/intergral/grafana-deep-tracepoint-panel/badge.svg)](https://snyk.io/test/github/intergral/grafana-deep-tracepoint-panel)
+
+# Deep Panel Tracepoint Plugin
 
 This is a custom panel for [Grafana](https://grafana.com) that will render the snapshot data
 from [Deep](https://github.com/intergral/deep).
@@ -47,3 +51,4 @@ COPY --from=deep /var/lib/grafana/plugins/ /var/lib/grafana/plugins/
 
 # continue with your build steps
 ```
+https://snyk.io/test/github/intergral/grafana-deep-datasource
