@@ -1,0 +1,28 @@
+site_name: Deep Grafana Tracepoint Panel
+site_url: https://intergral.github.com/grafana-deep-tracepoint-panel/
+
+repo_name: Grafana Deep Tracepoint Panel
+repo_url: https://github.com/intergral/grafana-deep-tracepoint-panel
+
+copyright: Intergral GmbH 2023
+
+site_dir: _site
+
+theme:
+  logo: https://github.com/intergral/deep/blob/master/docs/docs/images/logo/icon.png?raw=true
+  favicon: https://github.com/intergral/deep/blob/master/docs/docs/images/logo/icon.svg?raw=true
+  name: material
+  features:
+    - content.code.copy
+
+extra_css:
+  - styles/styles.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

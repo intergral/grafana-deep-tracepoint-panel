@@ -1,0 +1,17 @@
+<!-- 1.0.0 Start -->
+# 1.0.0 (xx/xx/2023)
+
+ - First Release
+ 
+<!-- 1.0.0 END -->
+
+<!-- 0.1.1 Start -->
+<!-- Template START
+# 0.1.1 (16/06/2023)
+
+- **[CHANGE]**: description [#PRid](https://github.com/intergral/deep/pull/PRid) [@user](https://github.com/user)
+- **[FEATURE]**: description [#PRid](https://github.com/intergral/deep/pull/PRid) [@user](https://github.com/user)
+- **[ENHANCEMENT]**: description [#PRid](https://github.com/intergral/deep/pull/PRid) [@user](https://github.com/user)
+- **[BUGFIX]**: description [#PRid](https://github.com/intergral/deep/pull/PRid) [@user](https://github.com/user)
+Template END -->
+<!-- 0.1.1 END -->
