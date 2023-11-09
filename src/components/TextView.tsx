@@ -15,15 +15,28 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-export interface TracepointPanelOptions {
+import React from "react";
+import {InlineField, InlineFieldRow, Input} from "@grafana/ui";
+
+interface Props {
+    label?: string
+    text: string;
 }
 
-export interface TracepointArgs {
-  [key: string]: string;
 
-  fire_count: string;
-  fire_period: string;
-  window_start: string;
-  window_end: string;
-  log_msg: string
+
+export const TextView: React.FC<Props> = ({text,  label}) => {
+
+    return (
+            <InlineFieldRow>
+                <InlineField label={label} labelWidth={15} grow>
+                    <Input
+                        id={"logmsg"}
+                        value={text}
+                        type={"text"}
+                        disabled={true}
+                    />
+                </InlineField>
+            </InlineFieldRow>
+    )
 }

@@ -20,6 +20,7 @@ import {PanelProps} from '@grafana/data';
 import {TracepointPanelOptions} from 'types';
 import {css, cx} from '@emotion/css';
 import {useStyles2} from '@grafana/ui';
+import {TracepointView} from "./TracepointView";
 
 interface Props extends PanelProps<TracepointPanelOptions> {
 }
@@ -32,11 +33,14 @@ const getStyles = () => ({
   fullHeight: css`
     height: 100%;
   `,
+  tpHeader: css`
+    display: flex;
+    flex-direction: row;
+  `
 });
 
 export const TracepointPanel: React.FC<Props> = ({options, data, width, height}) => {
   const styles = useStyles2(getStyles);
-
 
   return (
     <div
@@ -45,6 +49,7 @@ export const TracepointPanel: React.FC<Props> = ({options, data, width, height})
         css`
           width: ${width}px;
           height: ${height}px;
+          overflow-y: scroll;
         `
       )}
     >
@@ -54,7 +59,16 @@ export const TracepointPanel: React.FC<Props> = ({options, data, width, height})
             flex-direction: column;
           `
       )}>
-
+          {Array.from(Array(data.series[0].fields[0].values.length)).map((_, index) => {
+              return (
+                  <TracepointView key={index}
+                                  index={index}
+                                  data={data}
+                                  options={options}
+                                  width={width}
+                  />
+              )
+          })}
       </div>
     </div>
   );
