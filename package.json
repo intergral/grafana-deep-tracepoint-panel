@@ -22,9 +22,9 @@
   "license": "AGPL-3.0",
   "devDependencies": {
     "@babel/core": "^7.16.7",
-    "@grafana/e2e": "10.2.0",
-    "@grafana/e2e-selectors": "10.2.0",
-    "@grafana/eslint-config": "^5.1.0",
+    "@grafana/e2e": "10.4.0",
+    "@grafana/e2e-selectors": "10.4.0",
+    "@grafana/eslint-config": "^7.0.0",
     "@grafana/tsconfig": "^1.2.0-rc1",
     "@swc/core": "^1.2.144",
     "@swc/helpers": "^0.4.12",
@@ -37,7 +37,9 @@
     "@types/node": "^18.11.9",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
-    "eslint-webpack-plugin": "^3.1.1",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-jsdoc": "48.1.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^7.2.0",
     "glob": "^8.0.3",
     "identity-obj-proxy": "3.0.0",
@@ -57,13 +59,13 @@
     "webpack-livereload-plugin": "^3.0.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "@emotion/css": "^11.13.0",
-    "@grafana/data": "10.2.3",
-    "@grafana/runtime": "10.2.3",
-    "@grafana/ui": "10.2.3",
+    "@grafana/data": "10.4.0",
+    "@grafana/runtime": "10.4.0",
+    "@grafana/ui": "10.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
