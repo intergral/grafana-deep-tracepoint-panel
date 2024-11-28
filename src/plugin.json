@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Deep Tracepoint Panel",
-  "id": "intergral-deep-tracepoint-panel",
+  "id": "intergral-deeptracepoint-panel",
   "info": {
     "keywords": ["panel"],
     "description": "Panel to render tracepoint data",
