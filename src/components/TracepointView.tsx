@@ -180,7 +180,7 @@ export const TracepointView: React.FC<Props> = ({index, data, width}: Props) => 
                     e.preventDefault()
                     e.stopPropagation()
                     const links = data.series[0].fields[0].getLinks?.({valueRowIndex: index})
-                    if (links) {
+                    if (links?.length) {
                         links[0].onClick?.(e)
                     }
                 }}/>
@@ -188,7 +188,7 @@ export const TracepointView: React.FC<Props> = ({index, data, width}: Props) => 
                     e.preventDefault()
                     e.stopPropagation()
                     const links = data.series[0].fields[6].getLinks?.({valueRowIndex: index})
-                    if (links) {
+                    if (links?.length) {
                         links[0].onClick?.(e)
                     }
                 }}/>

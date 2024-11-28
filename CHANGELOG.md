@@ -1,4 +1,11 @@
 <!-- 1.0.0 Start -->
+# 1.0.1 (09/11/2023)
+
+- **[CHANGE]**: update to node 20 [#19](https://github.com/intergral/deep/pull/19) [@Umaaz](https://github.com/Umaaz)
+
+<!-- 1.0.0 END -->
+
+<!-- 1.0.0 Start -->
 # 1.0.0 (09/11/2023)
 
  - First Release
